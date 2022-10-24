@@ -2,16 +2,15 @@
 
 ## Memories
 
-> This is a fullstack web application designed using MERN stack. In this applications users can create accounts, login with their custom credentials or using google account. In additional to that, users can create posts, like posts and comment on others's posts. 
+> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and to read random math-ralated quotes.
 ## Below is the screenshot of my work
 ![tour](https://github.com/ndikumanaisaie/Tour/blob/develop/client/src/images/shot.png)
 
 ## Built with
 - Javascript
 - React
-- Redux Toolkit
-- Material Design Bootstrap
-- MERN Stack
+- webpack
+- babel
 - gitflow
 
 
@@ -24,17 +23,17 @@
 - LinkedIn: [ndikumana-isaie-21166273](https://www.linkedin.com/in/ndikumana-isaie-21166273/)
 
 ## Link to URL on browser
-- [tour](https://toursapplication.herokuapp.com/)
+- [math-magician]()
 
 ## Link to URL on gitHub
-- [tour](https://github.com/ndikumanaisaie/Tour.git)
+- [math-magicial](https://github.com/ndikumanaisaie/math-magician.git)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ## Setup
-clone: run `git clone https://github.com/ndikumanaisaie/Tour.git`
+clone: run `git clone https://github.com/ndikumanaisaie/math-magician.git`
 Move to cloned folder: run git cd Tour.
 
 ## Install
@@ -57,10 +56,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to react team
 - Microverse staff
-- Our families
-- etc
+- Myfamily
 
 ## 📝 License
 
