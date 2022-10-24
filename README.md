@@ -9,8 +9,6 @@
 ## Built with
 - Javascript
 - React
-- webpack
-- babel
 - gitflow
 
 
