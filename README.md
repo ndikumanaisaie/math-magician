@@ -18,10 +18,7 @@
 
 - GitHub: [ndikumanaisaie](https://github.com/ndikumanaisaie)
 - Twitter: [Ndikuma38670724](https://twitter.com/Ndikuma38670724)
-- LinkedIn: [ndikumana-isaie-21166273](https://www.linkedin.com/in/ndikumana-isaie-21166273/)
-
-## Link to URL on browser
-- [math-magician]()
+- LinkedIn: [Ndikumana Isaie](https://www.linkedin.com/in/ndikumanaisaie/)
 
 ## Link to URL on gitHub
 - [math-magicial](https://github.com/ndikumanaisaie/math-magician.git)
