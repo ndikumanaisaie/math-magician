@@ -4,11 +4,13 @@
 
 > "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and to read random math-ralated quotes.
 
+## Below is the screenshot of my work
+![tour](https://github.com/ndikumanaisaie/math-magician/blob/develop/src/images/shot.png)
+
 ## Built with
 - Javascript
 - React
 - gitflow
-
 
 ## Author
 
