@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 1rem auto;
+  background-color: #e0e0e0;
+}
+
+.screen {
+  background-color: #858693;
+  height: 100px;
+  margin: 0;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.button-box {
+  width: 100%;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+
+button {
+  border: 1px;
+  background-color: rgb(211, 210, 217);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #49494b94;
+}
+
+.sign-btn {
+  background-color: #f5913e;
+  border: none;
+}
+
+.sign-btn:hover {
+  background-color: rgb(255, 221, 0);
+}
+
+.zero {
+  grid-column: 1 / 3;
+}
