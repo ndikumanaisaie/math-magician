@@ -23,6 +23,7 @@ body {
 .wrapper {
   width: 700px;
   margin: 1rem auto;
+  background-color: #e0e0e0;
 }
 
 .screen {
