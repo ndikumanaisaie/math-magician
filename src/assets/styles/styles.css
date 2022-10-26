@@ -27,75 +27,51 @@ body {
 
 .screen {
   background-color: #858693;
-  color: #fff;
-  font-weight: bold;
-  padding: 20px;
   height: 100px;
-  text-align: right;
   margin: 0;
-}
-
-.button-panel-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.row-number-0,
-.row-number-1,
-.row-number-2,
-.row-number-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-items: center;
-  height: 100px;
-}
-
-.row-number-4 {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  place-items: center;
-  height: 100px;
-}
-
-.row-number-0 > button,
-.row-number-1 > button,
-.row-number-2 > button,
-.row-number-3 > button,
-.row-number-4 > button {
-  border: 1px solid #858693;
-  height: 100%;
   width: 100%;
-  display: grid;
-  place-items: center;
-  color: #000;
-  padding: 10px;
+  padding: 0 10px;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
 }
 
-.row-number-0 > button:hover,
-.row-number-1 > button:hover,
-.row-number-2 > button:hover,
-.row-number-3 > button:hover,
-.row-number-4 > button:hover {
+.button-box {
+  width: 100%;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+
+button {
+  border: 1px;
+  background-color: rgb(211, 210, 217);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+}
+
+button:hover {
   background-color: #49494b94;
 }
 
-.orange-bg {
+.sign-btn {
   background-color: #f5913e;
+  border: none;
 }
 
-.grey-bg {
-  background-color: #e0e0e0;
+.sign-btn:hover {
+  background-color: rgb(255, 221, 0);
 }
 
-nav {
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  place-items: center;
-  width: 100%;
-}
-
-main {
-  width: 90%;
-  margin: 1rem auto;
+.zero {
+  grid-column: 1 / 3;
 }
