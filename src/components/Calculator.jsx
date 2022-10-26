@@ -1,20 +1,28 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import btnValues from '../utilities/util';
+import Screen from './Screen';
+import calculate from '../logic/calculate';
 
 class Calculator extends Component {
-  render() {
-    const btnValues = [
-      ['AC', '+-', '%', '÷'],
-      [7, 8, 9, 'x'],
-      [4, 5, 6, '-'],
-      [1, 2, 3, '+'],
-      [0, '.', '='],
-    ];
+  constructor(props) {
+    super(props);
+    this.state = {
+      operation: null,
+      next: null,
+      total: null,
+    };
+  }
 
+  render() {
+    const { operation, next, total } = this.state;
+    const handleClick = (e) => {
+      this.setState(calculate({ total, next, operation }, e.target.value));
+    };
     return (
       <div className="wrapper">
-        <div className="screen">0</div>
+        <Screen value={next || total || '0'} />
         <div className="button-box">
           {
             btnValues.flat().map((btn) => (
@@ -29,6 +37,7 @@ class Calculator extends Component {
                       : '0'
                 }
                 value={btn}
+                onClick={handleClick}
               >
                 { btn }
               </button>
