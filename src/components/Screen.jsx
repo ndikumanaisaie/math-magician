@@ -1,5 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Screen extends Component {
   render() {
@@ -9,5 +10,9 @@ class Screen extends Component {
     );
   }
 }
+
+Screen.propTypes = {
+  value: PropTypes.string.isRequired,
+};
 
 export default Screen;
