@@ -20,12 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.width-700 {
+.wrapper {
   width: 700px;
   margin: 1rem auto;
 }
 
-.result-display {
+.screen {
   background-color: #858693;
   color: #fff;
   font-weight: bold;
