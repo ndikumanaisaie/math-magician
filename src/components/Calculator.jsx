@@ -1,20 +1,24 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import btnValues from '../utilities/util';
+import Screen from './Screen';
 
 class Calculator extends Component {
-  render() {
-    const btnValues = [
-      ['AC', '+-', '%', '÷'],
-      [7, 8, 9, 'x'],
-      [4, 5, 6, '-'],
-      [1, 2, 3, '+'],
-      [0, '.', '='],
-    ];
+  constructor(props) {
+    super(props);
+    this.state = {
+      sign: '',
+      num: 0,
+      res: 0,
+    };
+  }
 
+  render() {
+    const { num, res } = this.state;
     return (
       <div className="wrapper">
-        <div className="screen">0</div>
+        <Screen value={num || res} />
         <div className="button-box">
           {
             btnValues.flat().map((btn) => (
