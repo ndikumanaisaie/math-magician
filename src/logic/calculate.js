@@ -77,7 +77,7 @@ export default function calculate(obj, buttonName) {
     return {};
   }
 
-  if (buttonName === '+/-') {
+  if (buttonName === '+-') {
     if (obj.next) {
       return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
     }
