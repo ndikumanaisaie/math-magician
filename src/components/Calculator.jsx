@@ -3,22 +3,26 @@
 import React, { Component } from 'react';
 import btnValues from '../utilities/util';
 import Screen from './Screen';
+import calculate from '../logic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sign: '',
-      num: 0,
-      res: 0,
+      operation: null,
+      next: null,
+      total: null,
     };
   }
 
   render() {
-    const { num, res } = this.state;
+    const { operation, next, total } = this.state;
+    const handleClick = (e) => {
+      this.setState(calculate({ total, next, operation }, e.target.value));
+    };
     return (
       <div className="wrapper">
-        <Screen value={num || res} />
+        <Screen value={next || total || '0'} />
         <div className="button-box">
           {
             btnValues.flat().map((btn) => (
@@ -33,6 +37,7 @@ class Calculator extends Component {
                       : '0'
                 }
                 value={btn}
+                onClick={handleClick}
               >
                 { btn }
               </button>
