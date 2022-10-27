@@ -1,30 +1,27 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import btnValues from '../utilities/util';
 import Screen from './Screen';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      operation: null,
-      next: null,
-      total: null,
-    };
-  }
+const Calculator = () => {
+  const [calc, setCalc] = useState({
+    operation: null,
+    next: null,
+    total: null,
+  });
 
-  render() {
-    const { operation, next, total } = this.state;
-    const handleClick = (e) => {
-      this.setState(calculate({ total, next, operation }, e.target.value));
-    };
-    return (
-      <div className="wrapper">
-        <Screen value={next || total || '0'} />
-        <div className="button-box">
-          {
+  const { operation, next, total } = calc;
+  const handleClick = (e) => {
+    setCalc(calculate({ total, next, operation }, e.target.value));
+  };
+
+  return (
+    <div className="wrapper">
+      <Screen value={next || total || '0'} />
+      <div className="button-box">
+        {
             btnValues.flat().map((btn) => (
               <button
                 key={btn}
@@ -43,10 +40,9 @@ class Calculator extends Component {
               </button>
             ))
           }
-        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Calculator;
