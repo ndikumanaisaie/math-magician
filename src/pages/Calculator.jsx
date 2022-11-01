@@ -18,10 +18,14 @@ const Calculator = () => {
   };
 
   return (
-    <div className="wrapper">
-      <Screen value={next || total || '0'} />
-      <div className="button-box">
-        {
+    <div className="main-wrapper">
+      <h2 className="calc-title">
+        Let&apos;s do some math
+      </h2>
+      <div className="wrapper">
+        <Screen value={next || total || '0'} />
+        <div className="button-box">
+          {
             btnValues.flat().map((btn) => (
               <button
                 key={btn}
@@ -40,8 +44,10 @@ const Calculator = () => {
               </button>
             ))
           }
+        </div>
       </div>
     </div>
+
   );
 };
 

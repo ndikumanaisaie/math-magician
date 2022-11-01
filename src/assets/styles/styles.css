@@ -21,8 +21,7 @@ body {
 }
 
 .wrapper {
-  width: 700px;
-  margin: 1rem auto;
+  width: 800px;
   background-color: #e0e0e0;
 }
 
@@ -78,18 +77,62 @@ button:hover {
 }
 
 .main-container {
-  width: 1200px;
+  width: 90%;
   margin: 1rem auto;
   border: 2px solid greenyellow;
 }
 
 .nav-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: aquamarine;
+  margin-bottom: 2rem;
 }
 
 .nav {
   display: flex;
   gap: 24px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+.home-section {
+  width: 80%;
+  margin: 3rem auto;
+  height: 100vh;
+}
+
+.paragraph {
+  padding: 1rem 0;
+}
+
+p {
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+  color: #272727;
+}
+
+.home-title {
+  font-size: 1.3rem;
+  line-height: 0.6rem;
+  color: #272727;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-title {
+  font-size: 1.3rem;
+  line-height: 0.6rem;
+  color: #272727;
+}
+
+.quote {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 4rem;
 }
