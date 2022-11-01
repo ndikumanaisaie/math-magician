@@ -2,7 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { useState } from 'react';
 import btnValues from '../utilities/util';
-import Screen from './Screen';
+import Screen from '../components/Screen';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
