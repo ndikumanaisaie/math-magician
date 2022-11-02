@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Screen = ({ value }) => (
-  <div className="screen">{value}</div>
+  <div className="screen">{value || '0'}</div>
 );
 
 Screen.propTypes = {
