@@ -2,7 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { useState } from 'react';
 import btnValues from '../utilities/util';
-import Screen from './Screen';
+import Screen from '../components/Screen';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -18,10 +18,14 @@ const Calculator = () => {
   };
 
   return (
-    <div className="wrapper">
-      <Screen value={next || total || '0'} />
-      <div className="button-box">
-        {
+    <div className="main-wrapper">
+      <h2 className="calc-title">
+        Let&apos;s do some math
+      </h2>
+      <div className="wrapper">
+        <Screen value={next || total || '0'} />
+        <div className="button-box">
+          {
             btnValues.flat().map((btn) => (
               <button
                 key={btn}
@@ -40,8 +44,10 @@ const Calculator = () => {
               </button>
             ))
           }
+        </div>
       </div>
     </div>
+
   );
 };
 

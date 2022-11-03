@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Setup
 clone: run `git clone https://github.com/ndikumanaisaie/math-magician.git`
-Move to cloned folder: run git cd Tour.
+Move to cloned folder: run git cd math-magician.
 
 ## Install
 
