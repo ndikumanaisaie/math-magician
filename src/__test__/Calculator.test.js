@@ -16,12 +16,12 @@ describe('Calculator page component', () => {
     expect(screenTree).toMatchSnapshot();
   });
 
-  it('should return the sum of two number from UI', () => {
+  it('should return the multiplication of two number from UI', () => {
     render(<Calculator />);
-    fireEvent.click(screen.getByText('8'));
-    fireEvent.click(screen.getByText('+'));
+    fireEvent.click(screen.getByText('5'));
+    fireEvent.click(screen.getByText('x'));
     fireEvent.click(screen.getByText('7'));
     fireEvent.click(screen.getByText('='));
-    expect(screen.getByText(/15/)).toBeInTheDocument();
+    expect(screen.getByText(/35/)).toBeInTheDocument();
   });
 });
