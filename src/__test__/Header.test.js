@@ -11,7 +11,6 @@ describe('Header', () => {
       <MemoryRouter>
         <NavBar />
       </MemoryRouter>,
-
     );
 
     screen.debug();

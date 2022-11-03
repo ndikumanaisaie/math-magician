@@ -9,6 +9,6 @@ describe('Display', () => {
     render(<Display />);
 
     screen.debug();
-    expect(screen.getByText(/'0'/)).toBeInTheDocument();
+    expect(screen.getByText(/0/)).toBeInTheDocument();
   });
 });
