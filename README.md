@@ -22,6 +22,8 @@
 
 ## Link to URL on gitHub
 - [math-magicial](https://github.com/ndikumanaisaie/math-magician.git)
+## Link to URL in the browser
+- [math-magicial](https://domath.netlify.app/)
 
 ## Getting Started
 
