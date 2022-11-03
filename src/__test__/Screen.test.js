@@ -1,14 +1,9 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 
-import Display from '../components/Screen';
+import Screen from '../components/Screen';
 
-describe('Display', () => {
-  test('renders App component', () => {
-    render(<Display />);
-
-    screen.debug();
-    expect(screen.getByText(/0/)).toBeInTheDocument();
-  });
+it('renders correctly the Screen component', () => {
+  const screen = renderer.create(<Screen />).toJSON();
+  expect(screen).toMatchSnapshot();
 });

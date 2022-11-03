@@ -1,14 +1,9 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 
 import Quotes from '../pages/Quotes';
 
-describe('Quotes', () => {
-  test('renders App component', () => {
-    render(<Quotes />);
-
-    screen.debug();
-    expect(screen.getByText(/Mathematics/)).toBeInTheDocument();
-  });
+it('renders correctly the Quotes component', () => {
+  const quotes = renderer.create(<Quotes />).toJSON();
+  expect(quotes).toMatchSnapshot();
 });

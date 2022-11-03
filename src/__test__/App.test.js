@@ -2,14 +2,14 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 
-import Header from '../components/Header';
+import App from '../components/App';
 
-it('renders correctly Header component', () => {
-  const header = renderer.create(
+it('renders correctly App component', () => {
+  const app = renderer.create(
     <MemoryRouter>
-      <Header />
+      <App />
     </MemoryRouter>,
 
   ).toJSON();
-  expect(header).toMatchSnapshot();
+  expect(app).toMatchSnapshot();
 });
